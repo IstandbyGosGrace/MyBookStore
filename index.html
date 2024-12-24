@@ -1,102 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
 
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Store</title>
+    <title>God's Grace Bookstore</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f2;
-            color: #333;
+            background-color: #f4f4f4;
         }
         header {
             background-color: #ff9966;
-            padding: 20px;
-            text-align: center;
             color: white;
-            font-size: 24px;
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 1.5rem;
         }
         .container {
-            padding: 20px;
+            width: 80%;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .book {
-            display: flex;
-            margin-bottom: 20px;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
         }
-        .book img {
-            width: 150px;
-            height: 200px;
-            object-fit: cover;
-            margin-right: 20px;
-            border-radius: 8px;
+        .book-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
         }
-        .book-details {
-            flex-grow: 1;
-        }
-        .book-details h2 {
-            margin: 0;
-            font-size: 20px;
-        }
-        .book-details p {
-            margin: 5px 0;
-        }
-        .buy-button {
-            background-color: #ff9966;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .buy-button:hover {
-            background-color: #cc7a4d;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+        .dropdown {
+            margin: 1rem 0;
         }
     </style>
 </head>
 <body>
 
-<header>Welcome to My Book Store</header>
+<header>Welcome to God's Grace Bookstore</header>
 
 <div class="container">
     <div class="book">
-        <img src="book1.jpg" alt="Book 1">
-        <div class="book-details">
-            <h2>Book Title 1</h2>
-            <p>Format: eBook & Physical</p>
-            <p>Price: $10.99</p>
-            <button class="buy-button">Buy Now</button>
-        </div>
+        <div class="book-title">By God's Grace I Stand</div>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="TG9Q9KR4JL26E" />
+            <label for="format">Select Your Format:</label>
+            <select name="os0" id="format" class="dropdown">
+                <option value="Paperback">Paperback - US$25.99</option>
+                <option value="Hardcover">Hardcover - US$25.99</option>
+                <option value="eBook">eBook - US$7.99</option>
+            </select>
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+        </form>
     </div>
+
     <div class="book">
-        <img src="book2.jpg" alt="Book 2">
-        <div class="book-details">
-            <h2>Book Title 2</h2>
-            <p>Format: eBook Only</p>
-            <p>Price: $5.99</p>
-            <button class="buy-button">Buy Now</button>
-        </div>
+        <div class="book-title">The Power of Forgiveness</div>
+        <p>"Forgiveness is the key that unlocks the chains of bitterness and resentment, allowing the light of God's grace to fill our hearts and heal our souls."</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="YOUR_HOSTED_BUTTON_ID" />
+            <label for="format">Select Your Format:</label>
+            <select name="os0" id="format" class="dropdown">
+                <option value="Paperback">Paperback - US$22.95</option>
+                <option value="eBook">eBook - US$3.99</option>
+            </select>
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+        </form>
     </div>
+
+    <div class="book">
+        <div class="book-title">The Power of Faith</div>
+        <p>"Faith is the quiet strength that propels us forward when the path is uncertain."</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="YOUR_HOSTED_BUTTON_ID" />
+            <label for="format">Select Your Format:</label>
+            <select name="os0" id="format" class="dropdown">
+                <option value="Paperback">Paperback - US$22.95</option>
+            </select>
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+        </form>
+    </div>
+
+    <div class="book">
+        <div class="book-title">The Power of Prayer</div>
+        <p>"Have you ever wondered about the true power of prayer? For some, it may feel like a quiet ritual, a fleeting moment between life’s many demands. For others, it’s a desperate plea during times of crisis."</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="YOUR_HOSTED_BUTTON_ID" />
+            <label for="format">Select Your Format:</label>
+            <select name="os0" id="format" class="dropdown">
+                <option value="Paperback">Paperback - US$22.95</option>
+                <option value="eBook">eBook - US$3.99</option>
+            </select>
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+        </form>
+    </div>
+
+    <div class="book">
+        <div class="book-title">The Power of Worship</div>
+        <p>"Your breakthrough lies in your worship; just as Paul and Silas sang praises and found their deliverance, so too can you experience freedom and transformation through The Power of worship."</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="YOUR_HOSTED_BUTTON_ID" />
+            <label for="format">Select Your Format:</label>
+            <select name="os0" id="format" class="dropdown">
+                <option value="Paperback">Paperback - US$22.95</option>
+            </select>
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+        </form>
+    </div>
+
+    <div class="book">
+        <div class="book-title">Walking Through the Valley</div>
+        <p>"Walking Through the Valley is the believer's key to deliverance."</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="YOUR_HOSTED_BUTTON_ID" />
+            <label for="format">Select Your Format:</label>
+            <select name="os0" id="format" class="dropdown">
+                <option value="Paperback">Paperback - US$25.99</option>
+                <option value="eBook">eBook - US$9.99</option>
+            </select>
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+        </form>
+    </div>
+
+    <div class="book">
+        <div class="book-title">Facing the Storms of Life</div>
+        <p>"Facing the Storms Of Life is a Christian self-help book that advises the reader on how to overcome the hardships and trials that so commonly visit the believer."</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="YOUR_HOSTED_BUTTON_ID" />
+            <label for="format">Select Your Format:</label>
+            <select name="os0" id="format" class="dropdown">
+                <option value="Paperback">Paperback - US$22.99</option>
+            </select>
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+        </form>
+    </div>
+
+    <div class="book">
+        <div class="book-title">The Potter-The Clay-The Process</div>
+        <p>"As the potter molds his clay, so Christ can shape lives by leading us through life's often difficult choices and challenges."</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="YOUR_HOSTED_BUTTON_ID" />
+            <label for="format">Select Your Format:</label>
+            <select name="os0" id="format" class="dropdown">
+                <option value="Paperback">Paperback - US$21.95</option>
+            </select>
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+        </form>
+    </div>
+
+    <div class="book">
+        <div class="book-title">From the Mouth of the Prophet</div>
+        <p>"This book walks us through a journey in prophetic prayer. It emphasizes the importance of prayer in helping to heal nations, and a world in crisis."</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="YOUR_HOSTED_BUTTON_ID" />
+            <label for="format">Select Your Format:</label>
+            <select name="os0" id="format" class="dropdown">
+                <option value="Paperback">Paperback - US$19.95</option>
+                <option value="eBook">eBook - US$7.99</option>
+            </select>
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+        </form>
+    </div>
+
 </div>
 
-<footer>
-    <p>Contact: info@mybookstore.com | Follow me on social media</p>
-</footer>
-
+</body>
+</html>
+<!-- partial -->
+  
 </body>
 </html>
